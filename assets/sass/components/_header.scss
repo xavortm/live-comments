@@ -1,0 +1,40 @@
+// One wrapper for all the comments. Adds more levels, but its also
+// easier to overwrite default plugin/theme stylings if needed.
+// Also it acts as prefix insted of adding prefix to each class name.
+.live-comments {
+
+	// Header element
+	.article-information {
+		display: flex;
+		align-items: center;
+	}
+
+	.comments-title {
+		color: black;
+		font-size: 28px;
+		display: inline-block;
+	}
+
+	.comments-count {
+		background: $color-primary;
+		color: white;
+		display: inline-block;
+		padding: 2px 8px;
+		border-radius: 5px;
+	}
+
+	.comments-article {
+		$on-text-spacing: 20px;
+
+		display: inline-block;
+		font-size: 18px;
+		margin-top: 0;
+		margin-left: $on-text-spacing + 10;
+		color: $color-muted;
+
+		a {
+			display: inline-block;
+			margin-left: $on-text-spacing;
+		}
+	}
+}

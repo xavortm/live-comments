@@ -1,5 +1,13 @@
-.row {
-	&.narrow {
-		max-width: 800px;
+.live-comments-wrapper {
+	padding: 60px;
+	margin-top: 20px;
+	background: #f9f9f9;
+
+	// Demo positioning
+	.live-comments.demo {
+		margin: 0 auto;
+		width: 760px;
+		background: white;
+		padding: 40px;
 	}
 }

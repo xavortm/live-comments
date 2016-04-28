@@ -14,13 +14,9 @@ $breakpoint-medium: 960px;
 $breakpoint-large: 	1200px;
 
 
-// Layout
-$layout-header-height: 70px;
-
-
 // Colors:
 $color-green: #5ea54d;
-$color-blue: #4072db;
+$color-blue: #3490DE;
 $color-navy: #3f3f75;
 $color-orange: #ff4902;
 
@@ -28,10 +24,9 @@ $color-primary: $color-blue;		// Navy blue
 $color-primary-dark: $color-navy;	// Navy blue
 $color-secondary: $color-green; 	// Blue
 $color-accent: $color-orange;		// Orange
-
-
+$color-muted: #888;
 
 // Fonts
 $font-serif: Georgia, "Times New Roman", serif;
-$font-sans: Noto, "Open Sans", sans-serif;
-$font-heading: Montserrat, Helvetica, sans-serif;
+$font-sans: Roboto, "Open Sans", sans-serif;
+$font-heading: $font-sans;

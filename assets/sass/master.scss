@@ -18,3 +18,7 @@
 
 // Separating the largest parts of the site in specific files.
 @import "layout/general";
+
+// Primary sass file.
+@import "components/elements";
+@import "components/header";
