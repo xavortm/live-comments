@@ -8,10 +8,11 @@ $global-width: 1200px;
 $breakpoint-mobile: 480px;
 
 
-// Standart set media queries
+// Standard mobile width
 $breakpoint-small: 	640px;
-$breakpoint-medium: 960px;
-$breakpoint-large: 	1200px;
+
+// The width of the comments wrapper.
+$breakpoint-medium: 760px;
 
 
 // Colors:
@@ -25,6 +26,8 @@ $color-primary-dark: $color-navy;	// Navy blue
 $color-secondary: $color-green; 	// Blue
 $color-accent: $color-orange;		// Orange
 $color-muted: #888;
+
+$color-borders: #ddd;
 
 // Fonts
 $font-serif: Georgia, "Times New Roman", serif;

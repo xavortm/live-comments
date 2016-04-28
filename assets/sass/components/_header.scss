@@ -7,6 +7,7 @@
 	.article-information {
 		display: flex;
 		align-items: center;
+		margin-bottom: 30px;
 	}
 
 	.comments-title {
@@ -35,6 +36,19 @@
 		a {
 			display: inline-block;
 			margin-left: $on-text-spacing;
+		}
+	}
+
+	// Responsive view.
+	@media (max-width: $breakpoint-medium) {
+		.article-information {
+			flex-flow: column;
+		}
+
+		.comments-article {
+			margin-left: 0;
+			margin-top: 5px;
+			text-align: center;
 		}
 	}
 }

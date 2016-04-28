@@ -1,0 +1,72 @@
+// The different types of comments. The primary section are the WordPress
+// standard comments. The other two tabs so far are tweets and facebook comments.
+.live-comments {
+
+	// Quick setup
+	$tabs-spacing: 30px;
+	$tabs-spacing-bottom: 5px !default;
+
+	// Also selectably by .comments-tabs
+	.tabs {
+		border-bottom: 1px solid $color-borders;
+		padding-bottom: $tabs-spacing-bottom;
+	}
+
+	.tabs-list {
+		display: flex;
+	}
+
+	.tabs-item {
+		margin-right: $tabs-spacing;
+		font-weight: bold;
+		color: black;
+		font-size: 18px;
+		cursor: pointer;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	// Right aligned.
+	.right {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	.back-to-top {
+
+	}
+
+	.active {
+		color: $color-primary;
+		position: relative;
+
+		&:after,
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -100%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			
+			// A little math to center the arrow.
+			left: calc( (100% - #{$tabs-spacing }) / 2 );
+			right: calc( 100% - #{$tabs-spacing } / 2 );
+		}
+
+		&:after {
+			top: calc(100% + #{$tabs-spacing-bottom} );
+			border-color: #fff  transparent transparent transparent;
+			border-width: 11px;
+		}
+
+		&:before {
+			top: calc(100% + #{$tabs-spacing-bottom + 1});
+			border-color: $color-borders transparent transparent transparent;
+			border-width: 11px;
+		}
+	}
+}

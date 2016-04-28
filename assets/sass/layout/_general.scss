@@ -1,12 +1,13 @@
+// Demo layout
 .live-comments-wrapper {
-	padding: 60px;
 	margin-top: 20px;
 	background: #f9f9f9;
 
 	// Demo positioning
 	.live-comments.demo {
 		margin: 0 auto;
-		width: 760px;
+		max-width: 760px;
+		width: 100%;
 		background: white;
 		padding: 40px;
 	}

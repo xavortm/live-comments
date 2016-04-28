@@ -552,12 +552,12 @@ td, th {
   padding: 0; }
 
 .live-comments-wrapper {
-  padding: 60px;
   margin-top: 20px;
   background: #f9f9f9; }
   .live-comments-wrapper .live-comments.demo {
     margin: 0 auto;
-    width: 760px;
+    max-width: 760px;
+    width: 100%;
     background: white;
     padding: 40px; }
 
@@ -572,7 +572,8 @@ td, th {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 30px; }
 
 .live-comments .comments-title {
   color: black;
@@ -595,3 +596,58 @@ td, th {
   .live-comments .comments-article a {
     display: inline-block;
     margin-left: 20px; }
+
+@media (max-width: 760px) {
+  .live-comments .article-information {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+  .live-comments .comments-article {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center; } }
+
+.live-comments .tabs {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px; }
+
+.live-comments .tabs-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.live-comments .tabs-item {
+  margin-right: 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  cursor: pointer; }
+  .live-comments .tabs-item:hover {
+    color: #3490DE; }
+
+.live-comments .right {
+  margin-left: auto;
+  margin-right: 0; }
+
+.live-comments .active {
+  color: #3490DE;
+  position: relative; }
+  .live-comments .active:after, .live-comments .active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    left: calc( (100% - 30px) / 2);
+    right: calc( 100% - 30px / 2); }
+  .live-comments .active:after {
+    top: calc(100% + 5px);
+    border-color: #fff  transparent transparent transparent;
+    border-width: 11px; }
+  .live-comments .active:before {
+    top: calc(100% + 6px);
+    border-color: #ddd transparent transparent transparent;
+    border-width: 11px; }
